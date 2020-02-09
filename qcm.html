@@ -1,0 +1,203 @@
+<link rel="stylesheet" href="cssqcm/bootstrap.min.css" id="bootstrap-css">
+<link rel="stylesheet" href="cssqcm/style.css">
+<link rel="stylesheet" href="cssqcm/styleQcm.css">
+
+<div class="container-fluid p-0">
+  
+<!-- Bootstrap row -->
+<div class="row" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block"><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <ul class="list-group">
+            <!-- Separator with title -->
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>INTERFACE</small>
+            </li>
+            <!-- /END Separator -->
+            <!-- Menu with submenu -->
+            <a href="index.html" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span href="index.html" class="fa fa-dashboard fa-fw mr-3"></span> 
+                    <span href="index.html" class="menu-collapsed">Home</span>
+                    <span href="index.html" class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <!--<a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-user fa-fw mr-3"></span>
+                    <span onclick="toggle('toPut')" class="menu-collapsed">Profile</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <div id='submenu2' class="collapse sidebar-submenu">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Settings</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Password</span>
+                </a>
+            </div>            
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-tasks fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Tasks</span>    
+                </div>
+            </a>
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>OPTIONS</small>
+            </li>
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-calendar fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Calendar</span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-envelope-o fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">5</span></span>
+                </div>
+            </a>
+            <li class="list-group-item sidebar-separator menu-collapsed"></li>            
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-question fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Help</span>
+                </div>
+            </a>
+            <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                    <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                </div>
+            </a>
+
+            <li class="list-group-item logo-separator d-flex justify-content-center">
+                <img src='https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg' width="30" height="30" />    
+            </li>   
+        </ul> List Group END-->
+    </div><!-- sidebar-container END -->
+
+    <!-- MAIN -->
+    <div class="col">
+        
+        <h1>
+            THOT ! - 
+            <small class="text-muted">Version 1.0 bêta</small>
+        </h1>
+        
+        
+        <div class="card">
+            <h4 class="card-header">Information</h4>
+            <div class="card-body">
+                    <p>En cas de problème, bug, merci de contacter @thomas.</p><br>
+                    <p>Problème affichage QCM en cours de résolution, si un QCM n'apparait pas, veuillez rafraichir la page.</p>
+            </div>
+        </div>
+<div class="row" >
+<body>
+<br>
+<form id = "quiz" name = "quiz1">
+
+<p id="q1" class = "questions"></p>
+<input id = "textbox" type = "text" name = "question1" placeholder ="Débit ✍️">
+<input id = "button" type = "button" value = "Valider" onclick = "checkq1();">
+
+<p id = "message1"></p>
+
+</form>
+
+<form id = "quiz" name = "quiz2">
+
+<p id="q2" class = "questions"></p>
+<input id = "textbox" type = "text" name = "question2" placeholder ="Débit ✍️">
+<input id = "button" type = "button" value = "Valider" onclick = "checkq2();">
+
+<p id = "message2"></p>
+
+</form>
+
+<form id = "quiz" name = "quiz3">
+
+<p id="q3" class = "questions"></p>
+<input id = "textbox" type = "text" name = "question3" placeholder ="Volume NaCl ✍️ ">
+<input id = "textbox" type = "text" name = "question4" placeholder ="Volume Kcl ✍️">
+<input id = "textbox" type = "text" name = "question5" placeholder ="Débit ✍️">
+<input id = "button" type = "button" value = "Valider" onclick = "checkq3();">
+
+<p id = "message3"></p>
+
+</form>
+
+<form id = "quiz" name = "quiz4">
+
+<p id="q4" class = "questions"></p>
+<input id = "textbox" type = "text" name = "question6" placeholder ="Volume NaCl ✍️ ">
+<input id = "textbox" type = "text" name = "question7" placeholder ="Volume Kcl ✍️">
+<input id = "textbox" type = "text" name = "question8" placeholder ="Débit ✍️">
+<input id = "button" type = "button" value = "Valider" onclick = "checkq4();">
+
+<p id = "message4"></p>
+
+</form>
+
+<form id = "quiz" name = "quiz5">
+
+<p id="q5" class = "questions"></p>
+<input id = "textbox" type = "text" name = "question9" placeholder ="Nombre d'ampoule ✍️ ">
+<input id = "textbox" type = "text" name = "question10" placeholder ="Débit ✍️">
+<input id = "button" type = "button" value = "Valider" onclick = "checkq5();">
+
+<p id = "message5"></p>
+
+</form>
+
+<form id = "quiz" name = "quiz6">
+
+<p id="q6" class = "questions"></p>
+<input id = "textbox" type = "text" name = "question11" placeholder ="Volume Héparine ✍️ ">
+<input id = "button" type = "button" value = "Valider" onclick = "checkq6();">
+
+<p id = "message6"></p>
+
+</form>
+
+<form id = "quiz" name = "quiz7">
+
+<p id="q7" class = "questions"></p>
+<input id = "textbox" type = "text" name = "question12" placeholder ="Volume Colchymicine® ✍️ ">
+<input id = "button" type = "button" value = "Valider" onclick = "checkq7();">
+
+<p id = "message7"></p>
+
+</form>
+
+<form id = "quiz" name = "quiz8">
+
+<p id="q8" class = "questions"></p>
+<input id = "textbox" type = "text" name = "question13" placeholder ="Gramme(s) ✍️ ">
+<input id = "button" type = "button" value = "Valider" onclick = "checkq8();">
+
+<p id = "message8"></p>
+
+</form>
+
+</body>
+
+    </div><!-- Main Col END -->
+    
+</div><!-- body-row END -->
+  
+  
+</div><!-- container -->
+
+
+
+
+<script src="jsqcm/bootstrap.min.js"></script>
+<script src="jsqcm/script.js"></script>
+<script src="jsqcm/toogle.js"></script>
+<script src="jsqcm/main.js"></script>
+<script src="jsqcm/jquery.js"></script>
